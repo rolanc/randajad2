@@ -1,7 +1,7 @@
-const travelerModel = require('./usuarios.model');
+const usuario = require('./usuarios.model');
 
 module.exports.registrar = (req, res) => {
-  let newTraveler = new travelerModel({
+  let newUsuario = new usuarioModel({
     cedula          : req.body.cedula,
     primerNombre    : req.body.primerNombre,
     segundoNombre   : req.body.segundoNombre,
@@ -16,17 +16,17 @@ module.exports.registrar = (req, res) => {
     fotoCliente     : req.body.fotoCliente
   });
 
-  newTraveler.save((err) => {
+  newUsuario.save((err) => {
     if (err) {
-      res.json({ success: false, msg: 'Ha ocurrido un error registrando al viajero' + err });
+      res.json({ success: false, msg: 'Ha ocurrido un error' + err });
     } else {
-      res.json({ success: true, msg: 'El el viajero se ha registrado correctamente' });
+      res.json({ success: true, msg: 'Se ha registrado correctamente' });
     }
   });
 };
 
 module.exports.listarTodos = (req, res) => {
-  travelerModel.find().then((user) => {
+  usuarioModel.find().then((user) => {
     console.log(user)
     res.send(user);
   });
@@ -34,7 +34,7 @@ module.exports.listarTodos = (req, res) => {
 
 module.exports.actualizar = (req, res) => {
   console.log(req);
-  travelerModel.update({ correo: req.body.correo }, req.body, (err, user) => {
+  usuarioModel.update({ correo: req.body.correo }, req.body, (err, user) => {
     if (err) {
       res.json({ success: false, msg: 'No se ha actualizado.' + handleError(err) });
 

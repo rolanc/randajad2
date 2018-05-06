@@ -10,20 +10,20 @@
 
     const vm = this;
 
-    vm.travelerNuevo = {};
+    vm.usuarioNuevo = {};
 
     vm.cloudObj = imageUploadService.getConfiguration();
 
     vm.preRegistrarViajero = (ptravelerNuevo) => {
 
-      vm.cloudObj.data.file = ptravelerNuevo.photo[0];
+      vm.cloudObj.data.file = pusuarioNuevo.photo[0];
       Upload.upload(vm.cloudObj).success((data) => {
-        vm.RegistrarViajero(ptravelerNuevo, data.url);
+        vm.RegistrarUsuario(pusuarioNuevo, data.url);
       });
     }
 
 
-    vm.RegistrarViajero = (ptravelerNuevo, urlImagen) => {
+    vm.RegistrarViajero = (pusuarioNuevo, urlImagen) => {
 
       let confirmarContrasenna = false,
         contrasenna1 = vm.travelerNuevo.contrasenna,

@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   angular
-    .module('travelersTours')
+    .module('randajad2')
     .factory('dataStorageFactory', dataStorageFactory);
 
   dataStorageFactory.$inject = ['$q', '$log', '$http'];
@@ -31,7 +31,7 @@
       let listaUsuarios = [];
 
       let peticion = $.ajax({
-        url: 'http://localhost:4000/api/get_all_travelers',
+        url: 'http://localhost:4000/api/get_all_usuarios',
         type: 'get',
         contentType: 'application/x-www-form-urlencoded; charset=utf-8',
         dataType: 'json',
@@ -58,7 +58,7 @@
       let response;
 
       let peticion = $.ajax({
-        url: 'http://localhost:4000/api/save_traveler',
+        url: 'http://localhost:4000/api/save_usuario',
         type: 'post',
         contentType: 'application/x-www-form-urlencoded; charset=utf-8',
         dataType: 'json',
@@ -95,7 +95,7 @@
       let respuesta;
 
       let peticion = $.ajax({
-        url: 'http://localhost:4000/api//update_traveler',
+        url: 'http://localhost:4000/api//update_usuario',
         type: 'put',
         contentType: 'application/x-www-form-urlencoded; charset=utf-8',
         dataType: 'json',
@@ -157,119 +157,7 @@
       });
     }
 
-    function _getHotelData() {
-      let listahoteles = [];
 
-      let peticion = $.ajax({
-        url: 'http://localhost:4000/api/get_all_hotels',
-        type: 'get',
-        contentType: 'application/x-www-form-urlencoded; charset=utf-8',
-        dataType: 'json',
-        async: false,
-        data: {
-
-        }
-      });
-
-      peticion.done((datos) => {
-        // console.log('Datos que vienen desde la base de datos')
-        // console.log(datos);
-        listahoteles = datos;
-      });
-      peticion.fail(() => {
-        listahoteles = [];
-        // console.log('Ocurrió un error');
-      });
-
-      return listahoteles;
-    }
-
-    function _setHotelData(nuevoHotel) {
-      let response;
-
-      let peticion = $.ajax({
-        url: 'http://localhost:4000/api/save_hotel',
-        type: 'post',
-        contentType: 'application/x-www-form-urlencoded; charset=utf-8',
-        dataType: 'json',
-        async: false,
-        data: {
-          'idHotel': nuevoHotel.idHotel,
-          'nombreHotel': nuevoHotel.nombreHotel,
-          'provincia': nuevoHotel.provincia,
-          'canton': nuevoHotel.canton,
-          'distrito': nuevoHotel.distrito,
-          'direccion': nuevoHotel.direccion,
-          'telefonoServicio': nuevoHotel.telefonoServicio,
-          'correoServicio': nuevoHotel.correoServicio,
-          'telefonoReservaciones': nuevoHotel.telefonoReservaciones,
-          'correoReservaciones': nuevoHotel.correoReservaciones,
-          'fotoHotel': nuevoHotel.fotoHotel,
-          'valoracion': nuevoHotel.valoracion,
-          'estadohotel':nuevoHotel.estadohotel,
-          'latitud': nuevoHotel.latitud,
-          'longitud': nuevoHotel.longitud,
-          'mapa': nuevoHotel.mapa,
-          'cantRates' : nuevoHotel.cantRates,
-          'totalValor' :nuevoHotel.totalValor
-        }
-      });
-
-      peticion.done((datos) => {
-        response = datos.success;
-        console.log('Petición realizada con éxito');
-      });
-      peticion.fail((error) => {
-        response = error;
-        console.log('Ocurrió un error');
-      });
-
-      return response;
-    }
-
-
-    function _updateHotelData(hotelActualizado) {
-      let response;
-
-      let peticion = $.ajax({
-        url: 'http://localhost:4000/api/update_hotel',
-        type: 'put',
-        contentType: 'application/x-www-form-urlencoded; charset=utf-8',
-        dataType: 'json',
-        async: false,
-        data: {
-          'idHotel': hotelActualizado.idHotel,
-          'nombreHotel': hotelActualizado.nombreHotel,
-          'provincia': hotelActualizado.provincia,
-          'canton': hotelActualizado.canton,
-          'distrito': hotelActualizado.distrito,
-          'direccion': hotelActualizado.direccion,
-          'telefonoServicio': hotelActualizado.telefonoServicio,
-          'correoServicio': hotelActualizado.correoServicio,
-          'telefonoReservaciones': hotelActualizado.telefonoReservaciones,
-          'correoReservaciones': hotelActualizado.correoReservaciones,
-          'fotoHotel': hotelActualizado.fotoHotel,
-          'valoracion': hotelActualizado.valoracion,
-          'estadohotel':hotelActualizado.estadohotel,
-          'latitud': hotelActualizado.latitud,
-          'longitud': hotelActualizado.longitud,
-          'mapa': hotelActualizado.mapa,
-          'cantRates': hotelActualizado.cantRates,
-          'totalValor' :hotelActualizado.totalValor
-        }
-      });
-
-      peticion.done((datos) => {
-        response = datos.success;
-        console.log('Petición realizada con éxito paquete actualizado');
-      });
-      peticion.fail((error) => {
-        response = error;
-        console.log('Ocurrió un error el actualizar paquete');
-      });
-
-      return response;
-    }
     /** 
        * Función que almacena las datos dentro del session Storage
        */
