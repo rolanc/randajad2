@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   angular
-  .module('travelersTours')
+  .module('randajad2')
   .service('servicioInicioSesion', servicioInicioSesion);
 
   servicioInicioSesion.$inject = ['$log', '$http', 'servicioUsuarios', 'dataStorageFactory'];

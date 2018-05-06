@@ -1,7 +1,7 @@
 (() => {
     'use strict';
     angular
-        .module('travelersTours')
+        .module('randajad2')
         .service('imageUploadService', imageUploadService);
 
     imageUploadService.$inject = ['$http'];

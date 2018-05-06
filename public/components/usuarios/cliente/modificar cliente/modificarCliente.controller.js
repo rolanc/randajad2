@@ -1,7 +1,7 @@
 (() => {
     'use strict';
     angular
-        .module('travelersTours')
+        .module('randajad2')
         .controller('controladorModificarCliente', controladorModificarCliente);
 
     controladorModificarCliente.$inject = ['$http', '$stateParams', '$state', 'servicioUsuarios', 'servicioLogin', 'imageUploadService', 'Upload'];

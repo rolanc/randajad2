@@ -1,16 +1,16 @@
 ### TODOs
 | Filename | line # | TODO
 |:------|:------:|:------
-| node_modules\@uirouter\core\_bundles\ui-router-core.js | 2578 | explicitly make this user configurable
-| node_modules\@uirouter\core\_bundles\ui-router-core.js | 3065 | Also compare parameters
-| node_modules\@uirouter\core\_bundles\ui-router-core.js | 5061 | typeof?
-| node_modules\@uirouter\core\_bundles\ui-router-core.js | 5652 | Validate incoming view name with a regexp to allow:
 | node_modules\@uirouter\angularjs\release\angular-ui-router.js | 2585 | explicitly make this user configurable
 | node_modules\@uirouter\angularjs\release\angular-ui-router.js | 3072 | Also compare parameters
 | node_modules\@uirouter\angularjs\release\angular-ui-router.js | 5068 | typeof?
 | node_modules\@uirouter\angularjs\release\angular-ui-router.js | 5659 | Validate incoming view name with a regexp to allow:
 | node_modules\@uirouter\angularjs\release\angular-ui-router.js | 9952 | Use $view service as a central point for registering component-level hooks
 | node_modules\@uirouter\angularjs\release\ui-router-angularjs.js | 1900 | Use $view service as a central point for registering component-level hooks
+| node_modules\@uirouter\core\_bundles\ui-router-core.js | 2578 | explicitly make this user configurable
+| node_modules\@uirouter\core\_bundles\ui-router-core.js | 3065 | Also compare parameters
+| node_modules\@uirouter\core\_bundles\ui-router-core.js | 5061 | typeof?
+| node_modules\@uirouter\core\_bundles\ui-router-core.js | 5652 | Validate incoming view name with a regexp to allow:
 | node_modules\argparse\lib\help\formatter.js | 10 | add [additonal formatters][1]
 | node_modules\body-parser\lib\types\json.js | 74 | maybe make this configurable or part of "strict" option
 | node_modules\body-parser\node_modules\debug\browser.js | 37 | add a `localStorage` variable to explicitly enable/disable colors
@@ -34,8 +34,8 @@
 | node_modules\easy-extender\node_modules\lodash\index.js | 7643 | Changes.cancel();
 | node_modules\express\node_modules\send\index.js | 791 | this is all lame, refactor meeee
 | node_modules\fs-extra\lib\mkdirs\win32.js | 13 | expand to include the rest
-| node_modules\globby\node_modules\glob\common.js | 106 | is an absolute `cwd` supposed to be resolved against `root`?
 | node_modules\globby\node_modules\minimatch\minimatch.js | 462 | It would probably be faster to determine this
+| node_modules\globby\node_modules\glob\common.js | 106 | is an absolute `cwd` supposed to be resolved against `root`?
 | node_modules\gulp-todo\node_modules\vinyl\index.js | 223 | Should this be moved to vinyl-fs?
 | node_modules\gulp-todo\node_modules\vinyl\index.js | 319 | should this set the mode to symbolic if set?
 | node_modules\js-yaml\lib\js-yaml\loader.js | 591 | rework to inline fn with no type cast?
@@ -63,6 +63,7 @@
 | node_modules\jsdoc\lib\jsdoc\schema.js | 385 | define this as an enumeration elsewhere
 | node_modules\jsdoc\lib\jsdoc\schema.js | 504 | make these an enumeration
 | node_modules\jsdoc\templates\default\publish.js | 675 | move the tutorial functions to templateHelper.js
+| node_modules\moment\src\locale\fr.js | 50 | Return 'e' when day of month > 1. Move this case inside
 | node_modules\mongodb\lib\bulk\common.js | 180 | Something better
 | node_modules\mongodb\lib\bulk\ordered.js | 227 | Bring from driver information in isMaster
 | node_modules\mongodb-core\lib\connection\pool.js | 1196 | reenable when sessions development is complete
@@ -146,7 +147,6 @@
 | node_modules\ngmap\testapp\lib\prettify.js | 557 | handle tabs here?
 | node_modules\ngmap\testapp\lib\prettify.js | 947 | @mikesamuel recognize non-latin letters and numerals in idents
 | node_modules\ngmap\testapp\lib\prettify.js | 1215 | Possibly optimize by using '' if there's no flicker.
-| node_modules\moment\src\locale\fr.js | 50 | Return 'e' when day of month > 1. Move this case inside
 | node_modules\node-gyp\node_modules\glob\common.js | 106 | is an absolute `cwd` supposed to be resolved against `root`?
 | node_modules\node-gyp\node_modules\minimatch\minimatch.js | 462 | It would probably be faster to determine this
 | node_modules\node-sass\node_modules\glob\common.js | 106 | is an absolute `cwd` supposed to be resolved against `root`?
@@ -177,20 +177,19 @@
 | node_modules\oclazyload\bower_components\angular\angular.js | 25032 | @matsko implement validateLater to reduce number of validations
 | node_modules\oclazyload\bower_components\angular\angular.js | 28639 | @perf why not move this to the action fn?
 | node_modules\oclazyload\bower_components\angular\angular.js | 30655 | @perf generate setters to shave off ~40ms or 1-1.5%
+| node_modules\raw-body\node_modules\bytes\index.js | 36 | use is-finite module?
+| node_modules\readdirp\node_modules\minimatch\minimatch.js | 462 | It would probably be faster to determine this
 | node_modules\oclazyload\bower_components\angular-mocks\angular-mocks.js | 47 | @vojta remove this temporary api
 | node_modules\oclazyload\bower_components\angular-mocks\angular-mocks.js | 978 | @i this prevents methods being logged,
 | node_modules\oclazyload\bower_components\angular-mocks\angular-mocks.js | 1340 | @vojta change params to: method, url, data, headers, callback
-| node_modules\raw-body\node_modules\bytes\index.js | 36 | use is-finite module?
-| node_modules\readdirp\node_modules\minimatch\minimatch.js | 462 | It would probably be faster to determine this
-| node_modules\resp-modifier\node_modules\minimatch\minimatch.js | 462 | It would probably be faster to determine this
 | node_modules\rimraf\node_modules\glob\common.js | 106 | is an absolute `cwd` supposed to be resolved against `root`?
+| node_modules\resp-modifier\node_modules\minimatch\minimatch.js | 462 | It would probably be faster to determine this
 | node_modules\rimraf\node_modules\minimatch\minimatch.js | 462 | It would probably be faster to determine this
+| node_modules\serve-static\node_modules\send\index.js | 791 | this is all lame, refactor meeee
 | node_modules\sass-graph\node_modules\glob\common.js | 106 | is an absolute `cwd` supposed to be resolved against `root`?
 | node_modules\sass-graph\node_modules\minimatch\minimatch.js | 462 | It would probably be faster to determine this
 | node_modules\sass-graph\node_modules\yargs\yargs.js | 250 | actually deprecate self.defaults.
 | node_modules\sass-graph\node_modules\yargs\yargs.js | 347 | deprecate self.demand in favor of
-| node_modules\send\node_modules\debug\browser.js | 37 | add a `localStorage` variable to explicitly enable/disable colors
-| node_modules\serve-static\node_modules\send\index.js | 791 | this is all lame, refactor meeee
 | node_modules\stylus\lib\functions\blend.js | 25 | different blend modes like overlay etc.
 | node_modules\stylus\node_modules\minimatch\minimatch.js | 462 | It would probably be faster to determine this
 | node_modules\tiny-lr\node_modules\debug\browser.js | 37 | add a `localStorage` variable to explicitly enable/disable colors
@@ -202,16 +201,17 @@
 | node_modules\vinyl-fs\node_modules\vinyl\index.js | 23 | should this be moved to vinyl-fs?
 | node_modules\vinyl-fs\node_modules\vinyl\index.js | 42 | should this be moved to vinyl-fs?
 | node_modules\vinyl-fs\node_modules\vinyl\index.js | 149 | should this be moved to vinyl-fs?
-| node_modules\@uirouter\core\lib\resolve\resolvable.js | 13 | explicitly make this user configurable
-| node_modules\@uirouter\core\lib\transition\transition.js | 181 | Also compare parameters
-| node_modules\@uirouter\core\lib\url\urlMatcherFactory.js | 72 | typeof?
-| node_modules\@uirouter\core\lib\view\view.js | 58 | Validate incoming view name with a regexp to allow:
-| node_modules\@uirouter\core\lib-esm\resolve\resolvable.js | 11 | explicitly make this user configurable
-| node_modules\@uirouter\core\lib-esm\transition\transition.js | 179 | Also compare parameters
-| node_modules\@uirouter\core\lib-esm\url\urlMatcherFactory.js | 70 | typeof?
-| node_modules\@uirouter\core\lib-esm\view\view.js | 56 | Validate incoming view name with a regexp to allow:
+| node_modules\send\node_modules\debug\browser.js | 37 | add a `localStorage` variable to explicitly enable/disable colors
 | node_modules\@uirouter\angularjs\lib\directives\viewDirective.js | 204 | Use $view service as a central point for registering component-level hooks
 | node_modules\@uirouter\angularjs\lib-esm\directives\viewDirective.js | 328 | Use $view service as a central point for registering component-level hooks
+| node_modules\@uirouter\core\lib-esm\resolve\resolvable.js | 11 | explicitly make this user configurable
+| node_modules\@uirouter\core\lib-esm\url\urlMatcherFactory.js | 70 | typeof?
+| node_modules\@uirouter\core\lib-esm\transition\transition.js | 179 | Also compare parameters
+| node_modules\@uirouter\core\lib-esm\view\view.js | 56 | Validate incoming view name with a regexp to allow:
+| node_modules\@uirouter\core\lib\resolve\resolvable.js | 13 | explicitly make this user configurable
+| node_modules\@uirouter\core\lib\url\urlMatcherFactory.js | 72 | typeof?
+| node_modules\@uirouter\core\lib\transition\transition.js | 181 | Also compare parameters
+| node_modules\@uirouter\core\lib\view\view.js | 58 | Validate incoming view name with a regexp to allow:
 | node_modules\are-we-there-yet\node_modules\readable-stream\lib\_stream_writable.js | 289 | defer error events consistently everywhere, not just the cb
 | node_modules\browser-sync\node_modules\iconv-lite\encodings\dbcs-codec.js | 348 | What if we have no default? (resCode == undefined)
 | node_modules\browser-sync\node_modules\iconv-lite\encodings\dbcs-codec.js | 472 | Callback with seq.
@@ -220,12 +220,12 @@
 | node_modules\browser-sync\node_modules\iconv-lite\encodings\dbcs-data.js | 66 | IBM CCSID 943 = Shift_JIS = CP932 with original Shift_JIS lower 128 chars.
 | node_modules\browser-sync\node_modules\iconv-lite\lib\extend-node.js | 167 | Set _charsWritten.
 | node_modules\cloneable-readable\node_modules\readable-stream\lib\_stream_writable.js | 289 | defer error events consistently everywhere, not just the cb
+| node_modules\csso\lib\compressor\clean\Ruleset.js | 16 | remove toLowerCase when type selectors will be normalized
 | node_modules\csso\lib\compressor\compress\color.js | 290 | remove those tokens
 | node_modules\csso\lib\compressor\compress\color.js | 297 | remove those tokens
 | node_modules\csso\lib\compressor\compress\color.js | 307 | remove those tokens
 | node_modules\csso\lib\compressor\compress\color.js | 315 | remove those tokens
 | node_modules\csso\lib\compressor\compress\Url.js | 30 | make better quote type selection
-| node_modules\csso\lib\compressor\clean\Ruleset.js | 16 | remove toLowerCase when type selectors will be normalized
 | node_modules\csso\lib\compressor\restructure\1-initialMergeRuleset.js | 41 | remove initial merge
 | node_modules\csso\lib\compressor\restructure\8-restructRuleset.js | 80 | need to be checked
 | node_modules\csso\lib\compressor\restructure\8-restructRuleset.js | 136 | disallow up merge only if any property interception only (i.e. diff.ne2overrided.length > 0);
@@ -367,10 +367,10 @@
 | node_modules\ngmap\config\jsdoc\template\publish.js | 644 | move the tutorial functions to templateHelper.js
 | node_modules\nodemon\node_modules\debug\src\browser.js | 41 | add a `localStorage` variable to explicitly enable/disable colors
 | node_modules\readdirp\node_modules\readable-stream\lib\_stream_writable.js | 289 | defer error events consistently everywhere, not just the cb
+| node_modules\serve-static\node_modules\mime\build\test.js | 46 | Uncomment once #157 is resolved
 | node_modules\sass-graph\node_modules\yargs\lib\argsert.js | 7 | should this eventually raise an exception.
 | node_modules\sass-graph\node_modules\yargs\lib\command.js | 288 | move positional arg logic to yargs-parser and remove this duplication
 | node_modules\sass-graph\node_modules\yargs\lib\validation.js | 173 | case-insensitive configurability
-| node_modules\serve-static\node_modules\mime\build\test.js | 46 | Uncomment once #157 is resolved
 | node_modules\socket.io-parser\node_modules\debug\src\browser.js | 41 | add a `localStorage` variable to explicitly enable/disable colors
 | node_modules\stdout-stream\node_modules\readable-stream\lib\_stream_writable.js | 289 | defer error events consistently everywhere, not just the cb
 | node_modules\through2\node_modules\readable-stream\lib\_stream_writable.js | 289 | defer error events consistently everywhere, not just the cb
@@ -443,8 +443,8 @@
 | node_modules\q\q.js | 745 | "===" should be Object.is or equiv
 | node_modules\q\q.js | 1786 | attempt to recycle the rejection with "this".
 | node_modules\send\index.js | 685 | this is all lame, refactor meeee
-| node_modules\spdx-expression-parse\parse.js | 46 | Actually, everything is concatenated into one string
 | node_modules\split\index.js | 13 | pass in a function to map across the lines.
+| node_modules\spdx-expression-parse\parse.js | 46 | Actually, everything is concatenated into one string
 | node_modules\string_decoder\index.js | 43 | Handling all encodings inside a single object makes it very difficult
 | node_modules\string_decoder\index.js | 45 | There should be a utf8-strict encoding that rejects invalid UTF-8 code
 | node_modules\taffydb\taffy.js | 1092 | The curly braces used to be unescaped
@@ -589,13 +589,13 @@
 | node_modules\browser-sync\node_modules\debug\node.js | 177 | Should probably have an option in net.Socket to create a
 | node_modules\browser-sync\node_modules\debug\node.js | 185 | Hack to have stream not keep the event loop alive.
 | node_modules\leasot\lib\reporters\custom.js | 9 | make the default header a configurable option
-| node_modules\nodemon\lib\monitor\run.js | 266 | decide whether or not we need to decide the encoding
 | node_modules\nodemailer\lib\dkim\index.js | 3 | 
+| node_modules\nodemon\lib\monitor\run.js | 266 | decide whether or not we need to decide the encoding
 | node_modules\oclazyload\bower_components\angular\angular.js | 29848 | When a user selects an option, this watch will fire needlessly
-| node_modules\send\node_modules\debug\node.js | 177 | Should probably have an option in net.Socket to create a
-| node_modules\send\node_modules\debug\node.js | 185 | Hack to have stream not keep the event loop alive.
 | node_modules\tiny-lr\node_modules\debug\node.js | 177 | Should probably have an option in net.Socket to create a
 | node_modules\tiny-lr\node_modules\debug\node.js | 185 | Hack to have stream not keep the event loop alive.
+| node_modules\send\node_modules\debug\node.js | 177 | Should probably have an option in net.Socket to create a
+| node_modules\send\node_modules\debug\node.js | 185 | Hack to have stream not keep the event loop alive.
 | node_modules\localtunnel\node_modules\debug\src\node.js | 198 | Should probably have an option in net.Socket to create a
 | node_modules\localtunnel\node_modules\debug\src\node.js | 206 | Hack to have stream not keep the event loop alive.
 | node_modules\angular\angular.js | 31325 | When a user selects an option, this watch will fire needlessly

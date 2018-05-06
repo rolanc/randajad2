@@ -1,5 +1,5 @@
 (() => {
   'use strict';
   angular
-    .module('travelersTours', ['appRoutes', 'ngMessages', 'duScroll', 'ngFileUpload', 'ngMap']);
+    .module('randajad2', ['appRoutes', 'ngMessages', 'duScroll', 'ngFileUpload']);
 })();

@@ -3,3 +3,4 @@
 [0424/033901.327:WARNING:crash_report_exception_handler.cc(62)] ProcessSnapshotWin::Initialize failed
 [0506/022553.894:ERROR:crash_report_database_win.cc(427)] unexpected header
 [0506/031958.169:ERROR:crash_report_database_win.cc(427)] unexpected header
+[0506/034158.490:ERROR:crash_report_database_win.cc(427)] unexpected header

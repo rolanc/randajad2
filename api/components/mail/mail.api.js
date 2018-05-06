@@ -5,16 +5,16 @@ module.exports.enviarCorreo = (req, res) => {
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'rudy.cb23promotor@gmail.com',
-      pass: 'rudyneitorcb23'
+      user: 'rcalvoe@ucenfotec.ac.cr',
+      pass: 'Dani123654'
     }
   });
 
   let mailOptions = {
-    from: 'travelerstours@gmail.com',
+    from: 'rcalvoe@ucenfotec.ac.cr',
     to: req.body.to,
     subject: req.body.subject,
-    text: 'Su registro ha sido exitoso, le garantizamos que sus próximos viajes serán de mayor disfrute gracias a nustras selcción de hoteles.' , text:'Rudy.',
+    text: 'Su registro ha sido exitoso' , text:'Rolo.',
   };
 
   console.log(mailOptions);

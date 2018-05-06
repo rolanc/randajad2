@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   angular
-  .module('travelersTours')
+  .module('randajad2')
   .factory('localStorageFactory', localStorageFactory);
 
   localStorageFactory.$inject = ['$log','$http'];

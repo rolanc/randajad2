@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   angular
-  .module('travelersTours')
+  .module('randajad2')
   .directive('navegacionPrincipal', navegacionPrincipal);
   
   function navegacionPrincipal(){

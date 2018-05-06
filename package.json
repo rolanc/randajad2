@@ -1,14 +1,14 @@
 {
-  "name": "travelerstours",
+  "name": "randajad2",
   "version": "1.0.0",
-  "description": "Travelers Tours",
+  "description": "randajad2",
   "main": "./api/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rudycb23/Travelers_Tours.git"
+    "url": "git+https://github.com/rolanc/randajad2.git"
   },
   "keywords": [
     "MEAN",
@@ -17,12 +17,12 @@
     "JQUERY",
     "NODEJS"
   ],
-  "author": "Rudy Campos",
+  "author": "Rolo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rudycb23/Travelers_Tours/issues"
+    "url": "https://github.com/rolanc/randajad2/issues"
   },
-  "homepage": "https://github.com/rudycb23/Travelers_Tours#readme",
+  "homepage": "https://github.com/rolanc/randajad2#readme",
   "devDependencies": {
     "bcryptjs": "^2.4.3",
     "browser-sync": "^2.23.6",
