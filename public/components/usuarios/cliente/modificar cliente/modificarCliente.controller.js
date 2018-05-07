@@ -11,25 +11,25 @@
         const vm = this;
         const userAuth = servicioLogin.getAuthUser();
         let usuarioActivo = userAuth.getCorreo();
-        vm.travelerNuevo = {};
+        vm.usuarioNuevo = {};
 
 
         vm.cloudObj = imageUploadService.getConfiguration();
 
-        vm.preRegistrarViajero = (ptravelerNuevo) => {
+        vm.preRegistrarUsuario = (pusuarioNuevo) => {
     
-          vm.cloudObj.data.file = ptravelerNuevo.photo[0];
+          vm.cloudObj.data.file = pusuarioNuevo.photo[0];
           Upload.upload(vm.cloudObj).success((data) => {
-            vm.RegistrarViajero(ptravelerNuevo, data.url);
+            vm.RegistrarUsuario(pusuarioNuevo, data.url);
           });
         }
     
 
-        vm.RegistrarViajero = (ptravelerNuevo, urlImagen) => {
+        vm.RegistrarUsuario = (pusuarioNuevo, urlImagen) => {
 
             let confirmarContrasenna = false,
-                contrasenna1 = vm.travelerNuevo.contrasenna,
-                contrasenna2 = vm.travelerNuevo.contrasenna2;
+                contrasenna1 = vm.usuarioNuevo.contrasenna,
+                contrasenna2 = vm.usuarioNuevo.contrasenna2;
 
             if (contrasenna1 == contrasenna2) {
                 confirmarContrasenna = true;
@@ -38,12 +38,12 @@
             if (confirmarContrasenna == true) {
                 let rol = usuarioActivo.rol;
 
-                let objNuevoViajero = new Usuario(ptravelerNuevo.cedula, ptravelerNuevo.primerNombre,
-                    ptravelerNuevo.segundoNombre, ptravelerNuevo.primerApellido, ptravelerNuevo.segundoApellido,
-                    ptravelerNuevo.edad, ptravelerNuevo.genero, usuarioActivo.correo, ptravelerNuevo.telefono,
-                    ptravelerNuevo.contrasenna, rol,ptravelerNuevo.fotoCliente);
+                let objNuevoUsuario = new Usuario(pusuarioNuevo.cedula, pusuarioNuevo.primerNombre,
+                    pusuarioNuevo.segundoNombre, pusuarioNuevo.primerApellido, pusuarioNuevo.segundoApellido,
+                    pusuarioNuevo.edad, usuarioActivo.correo, pusuarioNuevo.telefono,
+                    pusuarioNuevo.contrasenna, rol, pusuarioNuevo.fotoCliente);
 
-                let registro = servicioUsuarios.actualizarUsuario(objNuevoViajero);
+                let registro = servicioUsuarios.actualizarUsuario(objNuevoUsuario);
 
 
                 if (registro == true) {

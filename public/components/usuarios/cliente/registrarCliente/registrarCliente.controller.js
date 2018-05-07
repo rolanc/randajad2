@@ -10,7 +10,7 @@
 
     const vm = this;
 
-    vm.travelerNuevo = {};
+    vm.usuarioNuevo = {};
 
     vm.cloudObj = imageUploadService.getConfiguration();
 
@@ -38,16 +38,16 @@
 
         let objNuevoUsuario = new Usuario(pusuariorNuevo.cedula, pusuariorNuevo.primerNombre,
           pusuariorNuevo.segundoNombre, pusuariorNuevo.primerApellido, pusuariorNuevo.segundoApellido,
-          pusuariorNuevo.edad, pusuariorNuevo.genero, pusuariorNuevo.correo, pusuariorNuevo.telefono,
+          pusuariorNuevo.edad, pusuariorNuevo.correo, pusuariorNuevo.telefono,
           pusuariorNuevo.contrasenna, rol,urlImagen);
 
-        let registro = servicioUsuarios.agregarUsuario(objNuevoViajero);
+        let registro = servicioUsuarios.agregarUsuario(objNuevoUsuario);
 
 
         if (registro == true) {
           swal({
             title: "Registro exitoso",
-            text: "Cliente registrado correctamente",
+            text: "Usuario registrado correctamente",
             icon: "success",
             button: "Aceptar"
           });

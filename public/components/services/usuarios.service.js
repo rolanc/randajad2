@@ -42,7 +42,7 @@
 
         let objEmail = {
           to: pNuevoUsuario.getCorreo(),
-          subject: 'Gracias por registrarse en nuestra plataforma le garantizamos la mejor expericia en sus próximas aventuras',
+          subject: 'Registro Exitoso',
           text: pNuevoUsuario.getContrasenna()
         };
         dataStorageFactory.sendMail(objEmail);
@@ -63,7 +63,7 @@
       listadeusuarioslocal.forEach(obj => {
         let tempfecha = new Date(obj.edad);
 
-        let tempCliente = new Usuario(obj.cedula, obj.primerNombre, obj.segundoNombre, obj.primerApellido, obj.segundoApellido, obj.edad, obj.genero, obj.correo, obj.telefono, obj.contrasenna, obj.rol, obj.fotoCliente);
+        let tempCliente = new Usuario(obj.cedula, obj.primerNombre, obj.segundoNombre, obj.primerApellido, obj.segundoApellido, obj.edad, obj.correo, obj.telefono, obj.contrasenna, obj.rol, obj.fotoCliente);
 
         listadeusuarios.push(tempCliente);
 
