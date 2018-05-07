@@ -131,67 +131,6 @@
         controller: 'controladorListarClientes',
         controllerAs: 'vm'
       })
-
-      .state('main.registrarHotel', {
-        url: '/registrarHotel',
-        templateUrl: './components/hotel/registrarHotel/registrarHotel.view.html',
-        data: {
-          pageTitle: 'Registro hotel'
-        },
-        resolve: {
-          load: ['$ocLazyLoad', ($ocLazyLoad) => {
-            return $ocLazyLoad.load('./components/hotel/registrarHotel/registrarHotel.controller.js')
-          }]
-        },
-        controller: 'controladorRegistroHotel',
-        controllerAs: 'vm'
-      })
-
-      .state('main.listarHoteles', {
-        url: '/listarHoteles',
-        templateUrl: './components/hotel/listarHoteles/listarHoteles.view.html',
-        data: {
-          pageTitle: 'Lista de hoteles'
-        },
-        resolve: {
-          load: ['$ocLazyLoad', ($ocLazyLoad) => {
-            return $ocLazyLoad.load('./components/hotel/listarHoteles/listarHoteles.controller.js')
-          }]
-        },
-        controller: 'controladorListaHoteles',
-        controllerAs: 'vm'
-      })
-
-      .state('main.modificarHotel', {
-        url: '/modificarHotel',
-        templateUrl: './components/hotel/modificarHotel/modificarHotel.view.html',
-        data: {
-          pageTitle: 'Consultar hotel'
-        },
-        resolve: {
-          load: ['$ocLazyLoad', ($ocLazyLoad) => {
-            return $ocLazyLoad.load('./components/hotel/modificarHotel/modificarHotel.controller.js')
-          }]
-        },
-        controller: 'controladorModificarHotel',
-        controllerAs: 'vm'
-      })
-
-      .state('main.acerca', {
-        url: '/acerca',
-        templateUrl: './components/TravelersTours/travelersTours.view.html',
-        data: {
-          pageTitle: 'Acerca de esta paágina'
-        },
-        resolve: {
-          load: ['$ocLazyLoad', ($ocLazyLoad) => {
-            return $ocLazyLoad.load('./components//TravelersTours/travelersTours.controller.js')
-          }]
-        },
-        controller: 'controladorAcerca',
-        controllerAs: 'vm'
-      })
-
       ;
 
     $urlRouterProvider.otherwise('/');
