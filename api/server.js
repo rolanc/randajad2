@@ -63,7 +63,6 @@ app.use( (req, res, next) => {
  */
 const index = require('./index');
 const user = require('./components/usuarios/usuarios.route');
-const hotel = require('./components/hotel/hotel.route');
 const mail = require('./components/mail/mail.route');
 
 

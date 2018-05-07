@@ -10,7 +10,6 @@
         <div class="col-md-4 d-flex justify-content-center">
           <a ui-sref="main.perfil">
             <div class="card" style="width: 15rem;">
-              <img class="card-img-top" src="../../sources/img/miPerfil2.jpg" width="200px" height="200px" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-center">Mi perfil</h5>
               </div>
@@ -18,43 +17,22 @@
           </a>
         </div>
   
-        <div class="col-md-4 d-flex justify-content-center" ng-if="vm.rolUsuario==1">
-          <a ui-sref="main.registrarHotel">
-            <div class="card" style="width: 15rem;">
-              <img class="card-img-top" src="../../sources/img/Hoteles.jpg" width="200px" height="200px" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title text-center">Registrar hotel</h5>
-              </div>
-            </div>
-          </a>
-        </div>
+
   
         <div class="col-md-4 d-flex justify-content-center" ng-if="vm.rolUsuario==1">
           <a ui-sref="main.registrarNuevoCliente">
             <div class="card" style="width: 15rem;">
-              <img class="card-img-top" src="../../sources/img/Clientes.jpg" width="200px" height="200px" alt="Card image cap">
-              <div class="card-body">
+               <div class="card-body">
                 <h5 class="card-title text-center">Registrar cliente</h5>
               </div>
             </div>
           </a>
         </div>
   
-        <div class="col-md-4 d-flex justify-content-center">
-          <a ui-sref="main.listarHoteles">
-            <div class="card" style="width: 15rem;">
-              <img class="card-img-top" src="../../sources/img/Hoteles.jpg" width="200px" height="200px" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title text-center">Hoteles</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-  
+ 
         <div class="col-md-4 d-flex justify-content-center" ng-if="vm.rolUsuario==1">
           <a ui-sref="main.listarClientes">
             <div class="card" style="width: 15rem;">
-              <img class="card-img-top" src="../../sources/img/tourists.jpg" width="200px" height="200px" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title text-center">Clientes</h5>
               </div>
@@ -62,17 +40,7 @@
           </a>
         </div>
   
-        <div class="col-md-4 d-flex justify-content-center">
-          <a ui-sref="main.acerca">
-            <div class="card" style="width: 15rem;">
-              <img class="card-img-top" src="../../sources/img/Travelers_Tours.jpg" width="200px" height="200px" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title text-center">Travelers Tours</h5>
-              </div>
-            </div>
-          </a>
-        </div>
-  
+ 
   
         <a class="nav-link">
           <button id="btn3"class="btn btn-danger" type="button" ng-click="vm.cerrarSesion()">
