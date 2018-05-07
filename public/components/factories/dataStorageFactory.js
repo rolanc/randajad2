@@ -12,10 +12,6 @@
       setUserData: _setUserData,
       updateUserData: _updateUserData,
 
-      getHotelData: _getHotelData,
-      setHotelData: _setHotelData,
-      updateHotelData: _updateHotelData,
-
       sendMail: _sendMail,
       setData: _setData,
       removeData: _removeData,
@@ -70,7 +66,6 @@
           'primerApellido'    : data.primerApellido,
           'segundoApellido'   : data.segundoApellido,
           'edad'              : data.edad,
-          'genero'            : data.genero,
           'correo'            : data.correo,
           'telefono'          : data.telefono,
           'contrasenna'       : data.contrasenna,
@@ -108,7 +103,6 @@
           'primerApellido'  : data.primerApellido,
           'segundoApellido' : data.segundoApellido,
           'edad'            : data.edad,
-          'genero'          : data.genero,
           'correo'          : data.correo,
           'telefono'        : data.telefono,
           'contrasenna'     : data.contrasenna,

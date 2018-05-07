@@ -8,7 +8,6 @@ module.exports.registrar = (req, res) => {
     primerApellido  : req.body.primerApellido,
     segundoApellido : req.body.segundoApellido,
     edad            : req.body.edad,
-    genero          : req.body.genero,
     correo          : req.body.correo,
     telefono        : req.body.telefono,
     contrasenna     : req.body.contrasenna,

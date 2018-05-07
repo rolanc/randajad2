@@ -72,7 +72,6 @@ const mail = require('./components/mail/mail.route');
  */
 
 app.use('/api', user);
-app.use('/api', hotel);
 app.use('/api', mail);
 
 

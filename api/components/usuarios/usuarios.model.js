@@ -8,7 +8,6 @@ let UserSchema = new mongoose.Schema({
   primerApellido:   { type: String, require: true },
   segundoApellido:  { type: String},
   edad:             { type: String, require: true },
-  genero:           { type: String, require: true },
   correo:           { type: String, require: true },
   telefono:         { type: String, require: true },
   contrasenna:      { type: String, require: true },
